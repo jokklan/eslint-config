@@ -15,22 +15,22 @@ module.exports = {
   ],
   plugins: ['react-hooks', 'jsx-a11y', 'prettier'],
   rules: {
-    camelcase: ['error', { allow: ['^_[^_]+$'] }],
+    camelcase: ['warn', { allow: ['^_[^_]+$'] }],
     'no-unused-vars': [
-      'error',
+      'warn',
       {
         argsIgnorePattern: '^_',
         ignoreRestSiblings: true
       }
     ],
     'no-param-reassign': [
-      'error',
+      'warn',
       {
         ignorePropertyModificationsFor: ['result']
       }
     ],
     'padding-line-between-statements': [
-      'error',
+      'warn',
       { blankLine: 'always', prev: '*', next: 'return' },
       { blankLine: 'always', prev: 'directive', next: '*' },
       { blankLine: 'any', prev: 'directive', next: 'directive' },
@@ -41,10 +41,10 @@ module.exports = {
       { blankLine: 'any', prev: ['let', 'var'], next: 'multiline-block-like' },
       { blankLine: 'any', prev: '*', next: 'case' }
     ],
-    'prettier/prettier': 'error',
-    'react/forbid-foreign-prop-types': 'error',
+    'prettier/prettier': 'warn',
+    'react/forbid-foreign-prop-types': 'warn',
     'react/function-component-definition': [
-      'error',
+      'warn',
       {
         namedComponents: 'arrow-function',
         unnamedComponents: 'arrow-function'
@@ -52,7 +52,7 @@ module.exports = {
     ],
     'react/jsx-props-no-spreading': 'off',
     'react/jsx-sort-props': [
-      'error',
+      'warn',
       {
         // "reservedFirst"
         shorthandLast: true,
@@ -67,7 +67,7 @@ module.exports = {
       }
     ],
     'react/sort-comp': [
-      'error',
+      'warn',
       {
         order: [
           'static-methods',
@@ -80,7 +80,7 @@ module.exports = {
       }
     ],
     'react-hooks/exhaustive-deps': [
-      'error',
+      'warn',
       {
         additionalHooks: '(useAsyncEffect|useRefWithEffect)'
       }

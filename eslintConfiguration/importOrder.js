@@ -8,7 +8,7 @@ module.exports = {
     'import/default': 'error',
     'import/export': 'error',
     'import/no-absolute-path': 'error',
-    'import/no-webpack-loader-syntax': 'error',
+    'import/no-webpack-loader-syntax': 'warn',
     'import/no-self-import': 'error',
     'import/no-mutable-exports': 'error',
     'import/no-extraneous-dependencies': 'error',
