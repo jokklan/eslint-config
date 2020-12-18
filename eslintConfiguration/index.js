@@ -39,7 +39,8 @@ module.exports = {
       // { blankLine: "any",    prev: ["const", "let", "var"], next: ["const", "let", "var"]},
       { blankLine: 'always', prev: '*', next: 'multiline-block-like' },
       { blankLine: 'any', prev: ['let', 'var'], next: 'multiline-block-like' },
-      { blankLine: 'any', prev: '*', next: 'case' }
+      { blankLine: 'any', prev: '*', next: 'case' },
+      { blankLine: 'any', prev: '*', next: 'default' }
     ],
     'prettier/prettier': 'warn',
     'react/forbid-foreign-prop-types': 'warn',
